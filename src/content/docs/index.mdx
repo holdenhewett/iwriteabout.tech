@@ -3,8 +3,8 @@ title: Heyo! I'm <br>Holden Hewett
 description: Holden Hewett's professional portfolio website
 template: splash
 hero:
-  tagline: I write about tech with and for software developers. I love being able to connect
-           with people and help them accomplish their goals through my writing.
+  tagline: I write about tech. I'm passionate about helping people accomplish their goals through my writing.
+           
   image:
     file: ../../assets/Holden-Hewett.jpg
   actions:
@@ -12,22 +12,25 @@ hero:
       link: /portfolio/projects
       icon: right-arrow
       variant: primary
-    - text: Learn more about me
-      link: /about/about
 ---
 
-import { LinkCard, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard, CardGrid, Card } from '@astrojs/starlight/components';
 import { Icon } from '@astrojs/starlight/components';
 
-## About me
+## What do you want to know?
 
-<LinkCard
-  title="My portfolio"
-  description="See work that illustrates my passion for helping software developers through my writing."
-  href="/portfolio/projects"
-/> 
-
-<CardGrid>
-  <LinkCard title="My resume" href="/resume/resume" />
-  <LinkCard title="Contact me" href="/contact/contact/" />
+<CardGrid stagger>
+	<Card title="See my work" icon="star">
+		See some of my work in my [portfolio](/portfolio/projects).
+	</Card>
+  <Card title="Check out my resume" icon="document">
+		Learn about my professional experience and skills on [my resume](/resume/resume).
+	</Card>	
+	<Card title="Learn more about me" icon="information">
+		Learn more [about me](/about/about).
+	</Card>
+  <Card title="Contact me" icon="email">
+		Send me an [email](mailto:hhewett@proton.me). We can chat about tech writing, internet privacy,
+    starting a cool project, or otherwise!
+	</Card>
 </CardGrid>
