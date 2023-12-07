@@ -9,10 +9,6 @@ export default {
 			colors: {
 				accent: colors.cyan,
 				gray: colors.zinc
-			},
-			fontFamily: {
-				sans: ['"Roboto"'],
-				mono: ['"Roboto Mono"'],
 			}
 		},
 	},
