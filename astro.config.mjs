@@ -20,13 +20,17 @@ export default defineConfig({
           label: "Portfolio",
           items: [
             // Each item here is one entry in the navigation menu.
-            { label: "My Projects", link: "/portfolio/projects" },
-            { label: "Resident Manager API Docs", link: "/portfolio/sm-api" },
-            { label: "Passpoint API Docs", link: "/portfolio/pp-api" },
-            { label: "Random MAC Addresses", link: "/portfolio/random-mac" },
-            { label: "RADIUS Security", link: "/portfolio/radsec" },
+            { label: "My projects", link: "/portfolio/projects" },
+            { label: "Resident Manager API docs", link: "/portfolio/sm-api" },
+            { label: "Passpoint API docs", link: "/portfolio/pp-api" },
+            { label: "Random MAC addresses", link: "/portfolio/random-mac" },
+            { label: "RADIUS security", link: "/portfolio/radsec" },
             { label: "Technical Writer HQ Capstone", link: "/portfolio/twhq-capstone" },
           ],
+        },
+        {
+          label: "Certifications",
+          autogenerate: { directory: "certs" },
         },
         {
           label: "Resume",
