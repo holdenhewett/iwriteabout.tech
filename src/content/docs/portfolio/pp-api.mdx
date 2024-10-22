@@ -3,41 +3,62 @@ title: Passpoint API Docs
 description: Examples from the Passpoint API from Eleven Software
 ---
 
-I was in charge of researching and selecting an API documentation tool for Eleven Software to use
-for public-facing APIs and I went with Stoplight.io. Its price and features were the most closely in
-line with Eleven's needs and was well received by internal and external stakeholders alike.
+While at Eleven Software, I was in charge of researching and selecting an API documentation tool to
+use for public-facing APIs as we wanted to move away from the stock Swagger API reference. I
+researched and tested several tools and presented my findings to the product and engineering teams.
+I mocked up and presented an existing internal API to the teams and we decided to move forward with
+the tool I chose: [Stoplight.io](https://stoplight.io/).
 
-I worked very closely with the VP of engineering and some software developers on the Passpoint API
-reference documentation to create the examples on this page. Some pieces of the API Reference
-endpoint image were blurred out because they were still in development at that time.
+I chose Stoplight as Eleven's API documentation tool for several reasons:
 
-Images from the Passpoint API reference that I worked on while at Eleven Software. All content in
-the images was created in Stoplight.io.
+* **Price** - The monthly price for the business plan was well within budget.
+* **Licenses** - The ability to rotate licenses was crucial to save money, as we could rotate
+  developers in and out of the tool as needed.
+* **External access restrictions** - The ability to give early access to the external customers
+  through guest licenses enabled Eleven to more closely collaborate with their partners on custom
+  APIs.
+* **Mock API endpoints** - This capability enables developers to make test calls directly from the
+  API reference instead of having to use apps like Postman.
+* **Style guide** - The ability to create a style guide to enforce formatting consistency no matter
+  who was contributing to the documentation.
+* **OpenAPI Specification (OAS)** - The ability to use OAS made onboarding Eleven's developers to
+  Stoplight straight forward and efficient.
+* **Customization** - The ability to customize the look and feel of the API reference with Eleven's
+  branding and custom domains.
+* **Collaboration** - The ability to collaborate with the product and engineering teams as well as
+  external customers.
 
-* [Conceptual topic](#concept-topic)
-* [API Reference sample](#api-reference)
-* [Reference topic](#reference-topic)
+After settling on Stoplight, I worked closely with the VP of engineering and lead developers on the
+Passpoint API. Passpoint is a Wi-Fi technology that allows users to connect to Wi-Fi networks using
+certificates instead of the traditional username and password. This API was Eleven's first attempt
+at developing such an API and I was tasked with creating the API reference documentation for it. 
 
+I modeled the API endpoints and responses in Stoplight's API editor and created the rest of the
+documentation in Stoplight's UI using Markdown.
 
-## Concept topic
+> *I was granted permission to use images from the Passpoint API reference on this site from
+ Eleven's VP of engineering. All content in the following sections was created by me in
+Stoplight.io.*
 
-short_name Property glossary entry - Describes how and why the `short_name` property is needed and
-works.
+## Glossary entry
+
+**`short_name` Property glossary entry** - Describes how and why the `short_name` property is needed
+and works.
 
 [![short_name Property glossary entry](/pp-api-concept.jpg)](/pp-api-concept.jpg)
 
 
 ## API Reference sample
 
-Create a Microsite Endpoint - A single API Reference endpoint that customizes a microsite and
+**Create a Microsite Endpoint** - A single API Reference endpoint that customizes a microsite and
 configures its connection details including the `short_name` property just mentioned.
 
 [![Microsite Branding and Customization](/pp-api-ref.jpg)](/pp-api-ref.jpg)
 
 
-## Reference topic
+## UI reference topic
 
-Microsite Branding and Customization - Details the parts of a microsite you can customize using the
-API.
+**Microsite Branding and Customization** - Details the parts of a microsite you can customize using
+the API.
 
 [![Create a Microsite Endpoint](/pp-api-ui-ref.jpg)](/pp-api-ui-ref.jpg)
