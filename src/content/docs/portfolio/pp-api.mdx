@@ -3,22 +3,29 @@ title: Passpoint API Docs
 description: Examples from the Passpoint API from Eleven Software
 ---
 
-While at Eleven Software, I was in charge of researching and selecting an API documentation tool to
-use for public-facing APIs as we wanted to move away from the stock Swagger API reference. I
-researched and tested several tools and presented my findings to the product and engineering teams.
-I mocked up and presented an existing internal API to the teams and we decided to move forward with
-the tool I chose: [Stoplight.io](https://stoplight.io/).
+While I was at Eleven Software, Eleven had just started a partnership with a major internet service
+provider (ISP) to create a custom API for their Passpoint Wi-Fi technology. Passpoint is a Wi-Fi
+technology that allows users to connect to Wi-Fi networks using certificates instead of a
+traditional username and password. There was a lot of excitement around this project and the API
+documentation needed to really shine.
+
+At the time, Eleven was simply using the stock Swagger API reference. I suggested Eleven use a more
+robust and customizable API documentation tool before presenting the API to their new partner. As
+Eleven's first technical writer, I was tasked with researching and selecting a tool to use for
+public-facing APIs. I researched and tested several tools. I presented my findings to the product
+and engineering teams by demonstrating a mockup I made of an existing internal API. This was a great
+success and we decided to move forward with the tool I chose: [Stoplight.io](https://stoplight.io/).
 
 I chose Stoplight as Eleven's API documentation tool for several reasons:
 
 * **Price** - The monthly price for the business plan was well within budget.
-* **Licenses** - The ability to rotate licenses was crucial to save money, as we could rotate
-  developers in and out of the tool as needed.
+* **Licenses** - The ability to rotate licenses was crucial to save money, as we could rotate users
+  in and out of the tool as needed.
 * **External access restrictions** - The ability to give early access to the external customers
   through guest licenses enabled Eleven to more closely collaborate with their partners on custom
   APIs.
-* **Mock API endpoints** - This capability enables developers to make test calls directly from the
-  API reference instead of having to use apps like Postman.
+* **Mock Servers** - This capability simulates Eleven's APIs to enable their customers to start
+  developing right away, allowing them to find issues earlier in the development process.
 * **Style guide** - The ability to create a style guide to enforce formatting consistency no matter
   who was contributing to the documentation.
 * **OpenAPI Specification (OAS)** - The ability to use OAS made onboarding Eleven's developers to
@@ -29,21 +36,26 @@ I chose Stoplight as Eleven's API documentation tool for several reasons:
   external customers.
 
 After settling on Stoplight, I worked closely with the VP of engineering and lead developers on the
-Passpoint API. Passpoint is a Wi-Fi technology that allows users to connect to Wi-Fi networks using
-certificates instead of the traditional username and password. This API was Eleven's first attempt
-at developing such an API and I was tasked with creating the API reference documentation for it. 
+Passpoint API. This API was Eleven's first attempt at developing such an API and I was tasked with
+creating the API reference documentation for it. I wrote and modeled the API endpoints and responses
+in Stoplight's API editor and created the rest of the documentation in Stoplight's UI using
+Markdown. I also helped determine and hone the API's terminology and pararameter names.
 
-I modeled the API endpoints and responses in Stoplight's API editor and created the rest of the
-documentation in Stoplight's UI using Markdown.
+When I presented the Passpoint API documentation to the ISP, they were impressed with the
+functionality of the docs, the ease of use, built-in documentation, and the ability to start
+developing right away with the mock servers. This was a huge win for Eleven and the Passpoint API
+project.
+
+The following sections contain samples of my work on the Passpoint API.
 
 > *I was granted permission to use images from the Passpoint API reference on this site from
- Eleven's VP of engineering. All content in the following sections was created by me in
+Eleven's VP of engineering. All content in the following sections was created by me in
 Stoplight.io.*
 
-## Glossary entry
+## Conceptual topic
 
-**`short_name` Property glossary entry** - Describes how and why the `short_name` property is needed
-and works.
+**`short_name` Property glossary entry** - A conceptual topic describing how and why the
+`short_name` property is needed and works.
 
 [![short_name Property glossary entry](/pp-api-concept.jpg)](/pp-api-concept.jpg)
 

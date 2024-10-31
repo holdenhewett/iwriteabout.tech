@@ -23,7 +23,6 @@ export default defineConfig({
             { label: "My projects", link: "/portfolio/projects" },
             { label: "Resident Manager API docs", link: "/portfolio/sm-api" },
             { label: "Passpoint API docs", link: "/portfolio/pp-api" },
-            { label: "Random MAC addresses", link: "/portfolio/random-mac" },
             { label: "RADIUS security", link: "/portfolio/radsec" },
             { label: "Technical Writer HQ Capstone", link: "/portfolio/twhq-capstone" },
           ],
